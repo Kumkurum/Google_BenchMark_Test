@@ -238,6 +238,132 @@ void setSwitchCase(int choose){
         case_10(_count);
         break;
 
+    case 61:
+        case_1(_count);
+        break;
+    case 62:
+        case_2(_count);
+        break;
+    case 63:
+        case_3(_count);
+        break;
+    case 64:
+        case_4(_count);
+        break;
+    case 65:
+        case_5(_count);
+        break;
+    case 66:
+        case_6(_count);
+        break;
+    case 67:
+        case_7(_count);
+        break;
+    case 68:
+        case_8(_count);
+        break;
+    case 69:
+        case_9(_count);
+        break;
+    case 70:
+        case_10(_count);
+        break;
+
+    case 71:
+        case_1(_count);
+        break;
+    case 72:
+        case_2(_count);
+        break;
+    case 73:
+        case_3(_count);
+        break;
+    case 74:
+        case_4(_count);
+        break;
+    case 75:
+        case_5(_count);
+        break;
+    case 76:
+        case_6(_count);
+        break;
+    case 77:
+        case_7(_count);
+        break;
+    case 78:
+        case_8(_count);
+        break;
+    case 79:
+        case_9(_count);
+        break;
+    case 80:
+        case_10(_count);
+        break;
+
+    case 81:
+        case_1(_count);
+        break;
+    case 82:
+        case_2(_count);
+        break;
+    case 83:
+        case_3(_count);
+        break;
+    case 84:
+        case_4(_count);
+        break;
+    case 85:
+        case_5(_count);
+        break;
+    case 86:
+        case_6(_count);
+        break;
+    case 87:
+        case_7(_count);
+        break;
+    case 88:
+        case_8(_count);
+        break;
+    case 89:
+        case_9(_count);
+        break;
+    case 90:
+        case_10(_count);
+        break;
+
+
+    case 91:
+        case_1(_count);
+        break;
+    case 92:
+        case_2(_count);
+        break;
+    case 93:
+        case_3(_count);
+        break;
+    case 94:
+        case_4(_count);
+        break;
+    case 95:
+        case_5(_count);
+        break;
+    case 96:
+        case_6(_count);
+        break;
+    case 97:
+        case_7(_count);
+        break;
+    case 98:
+        case_8(_count);
+        break;
+    case 99:
+        case_9(_count);
+        break;
+    case 100:
+        case_10(_count);
+        break;
+
+
     default:
         break;
     }
@@ -245,14 +371,11 @@ void setSwitchCase(int choose){
 void BenchMarkTest::BM_switchCase(benchmark::State& state){
     _count=0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         setSwitchCase(choose);
     }
 }
 BENCHMARK(BenchMarkTest::BM_switchCase);
-
-
-
 
 
 void setIfElse(int choose){
@@ -390,15 +513,101 @@ void setIfElse(int choose){
     else if(choose == 60)
         case_10(_count);
 
+    else if(choose == 61)
+        case_1(_count);
+    else if(choose == 62)
+        case_2(_count);
+    else if(choose == 63)
+        case_3(_count);
+    else if(choose == 64)
+        case_4(_count);
+    else if(choose == 65)
+        case_5(_count);
+    else if(choose == 66)
+        case_6(_count);
+    else if(choose == 67)
+        case_7(_count);
+    else if(choose == 68)
+        case_8(_count);
+    else if(choose == 69)
+        case_9(_count);
+    else if(choose == 70)
+        case_10(_count);
+
+
+    else if(choose == 71)
+        case_1(_count);
+    else if(choose == 72)
+        case_2(_count);
+    else if(choose == 73)
+        case_3(_count);
+    else if(choose == 74)
+        case_4(_count);
+    else if(choose == 75)
+        case_5(_count);
+    else if(choose == 76)
+        case_6(_count);
+    else if(choose == 77)
+        case_7(_count);
+    else if(choose == 78)
+        case_8(_count);
+    else if(choose == 79)
+        case_9(_count);
+    else if(choose == 80)
+        case_10(_count);
+
+
+    else if(choose == 81)
+        case_1(_count);
+    else if(choose == 82)
+        case_2(_count);
+    else if(choose == 83)
+        case_3(_count);
+    else if(choose == 84)
+        case_4(_count);
+    else if(choose == 85)
+        case_5(_count);
+    else if(choose == 86)
+        case_6(_count);
+    else if(choose == 87)
+        case_7(_count);
+    else if(choose == 88)
+        case_8(_count);
+    else if(choose == 89)
+        case_9(_count);
+    else if(choose == 90)
+        case_10(_count);
+
+
+    else if(choose == 91)
+        case_1(_count);
+    else if(choose == 92)
+        case_2(_count);
+    else if(choose == 93)
+        case_3(_count);
+    else if(choose == 94)
+        case_4(_count);
+    else if(choose == 95)
+        case_5(_count);
+    else if(choose == 96)
+        case_6(_count);
+    else if(choose == 97)
+        case_7(_count);
+    else if(choose == 98)
+        case_8(_count);
+    else if(choose == 99)
+        case_9(_count);
+    else if(choose == 100)
+        case_10(_count);
+
 };
 
 void BenchMarkTest::BM_ifElse(benchmark::State &state){
     _count = 0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         setIfElse(choose);
     }
-    //    qDebug()<<zz;
 }
 BENCHMARK(BenchMarkTest::BM_ifElse);
 
@@ -539,15 +748,102 @@ void setIf(int choose){
         case_9(_count);
     if(choose == 60)
         case_10(_count);
+
+
+    if(choose == 61)
+        case_1(_count);
+    if(choose == 62)
+        case_2(_count);
+    if(choose == 63)
+        case_3(_count);
+    if(choose == 64)
+        case_4(_count);
+    if(choose == 65)
+        case_5(_count);
+    if(choose == 66)
+        case_6(_count);
+    if(choose == 67)
+        case_7(_count);
+    if(choose == 68)
+        case_8(_count);
+    if(choose == 69)
+        case_9(_count);
+    if(choose == 70)
+        case_10(_count);
+
+
+    if(choose == 71)
+        case_1(_count);
+    if(choose == 72)
+        case_2(_count);
+    if(choose == 73)
+        case_3(_count);
+    if(choose == 74)
+        case_4(_count);
+    if(choose == 75)
+        case_5(_count);
+    if(choose == 76)
+        case_6(_count);
+    if(choose == 77)
+        case_7(_count);
+    if(choose == 78)
+        case_8(_count);
+    if(choose == 79)
+        case_9(_count);
+    if(choose == 80)
+        case_10(_count);
+
+
+    if(choose == 81)
+        case_1(_count);
+    if(choose == 82)
+        case_2(_count);
+    if(choose == 83)
+        case_3(_count);
+    if(choose == 84)
+        case_4(_count);
+    if(choose == 85)
+        case_5(_count);
+    if(choose == 86)
+        case_6(_count);
+    if(choose == 87)
+        case_7(_count);
+    if(choose == 88)
+        case_8(_count);
+    if(choose == 89)
+        case_9(_count);
+    if(choose == 90)
+        case_10(_count);
+
+
+    if(choose == 91)
+        case_1(_count);
+    if(choose == 92)
+        case_2(_count);
+    if(choose == 93)
+        case_3(_count);
+    if(choose == 94)
+        case_4(_count);
+    if(choose == 95)
+        case_5(_count);
+    if(choose == 96)
+        case_6(_count);
+    if(choose == 97)
+        case_7(_count);
+    if(choose == 98)
+        case_8(_count);
+    if(choose == 99)
+        case_9(_count);
+    if(choose == 100)
+        case_10(_count);
 };
 
 void BenchMarkTest::BM_if(benchmark::State &state){
     _count = 0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         setIf(choose);
     }
-    //    qDebug()<<zz;
 }
 BENCHMARK(BenchMarkTest::BM_if);
 
@@ -622,11 +918,55 @@ funcType massiveConteinerCStyle[]{
             case_8,
             case_9,
             case_10,
+            //60
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10
 };
 void BenchMarkTest::BM_MassiveLinks_CStyle(benchmark::State& state){
     _count=0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         massiveConteinerCStyle[choose](_count);
     }
 }
@@ -701,11 +1041,57 @@ QVector<std::function<void(quint32&)>> massiveConteiner{
                                        case_8,
                                        case_9,
                                        case_10,
+                                       //60
+
+                                       case_1,
+                                       case_2,
+                                       case_3,
+                                       case_4,
+                                       case_5,
+                                       case_6,
+                                       case_7,
+                                       case_8,
+                                       case_9,
+                                       case_10,
+
+
+                                       case_1,
+                                       case_2,
+                                       case_3,
+                                       case_4,
+                                       case_5,
+                                       case_6,
+                                       case_7,
+                                       case_8,
+                                       case_9,
+                                       case_10,
+
+                                       case_1,
+                                       case_2,
+                                       case_3,
+                                       case_4,
+                                       case_5,
+                                       case_6,
+                                       case_7,
+                                       case_8,
+                                       case_9,
+                                       case_10,
+
+                                       case_1,
+                                       case_2,
+                                       case_3,
+                                       case_4,
+                                       case_5,
+                                       case_6,
+                                       case_7,
+                                       case_8,
+                                       case_9,
+                                       case_10
                                        };
 void BenchMarkTest::BM_MassiveLinks_QVector_Function(benchmark::State &state){
     _count=0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         massiveConteiner[choose](_count);
     }
 }
@@ -779,12 +1165,60 @@ std::vector<std::function<void(quint32&)>> massiveConteinerStd{
                                            case_7,
                                            case_8,
                                            case_9,
+                                           case_10,
+                                           //60
+                                           case_0,
+                                           case_1,
+                                           case_2,
+                                           case_3,
+                                           case_4,
+                                           case_5,
+                                           case_6,
+                                           case_7,
+                                           case_8,
+                                           case_9,
+                                           case_10,
+
+                                           case_0,
+                                           case_1,
+                                           case_2,
+                                           case_3,
+                                           case_4,
+                                           case_5,
+                                           case_6,
+                                           case_7,
+                                           case_8,
+                                           case_9,
+                                           case_10,
+
+                                           case_0,
+                                           case_1,
+                                           case_2,
+                                           case_3,
+                                           case_4,
+                                           case_5,
+                                           case_6,
+                                           case_7,
+                                           case_8,
+                                           case_9,
+                                           case_10,
+
+                                           case_0,
+                                           case_1,
+                                           case_2,
+                                           case_3,
+                                           case_4,
+                                           case_5,
+                                           case_6,
+                                           case_7,
+                                           case_8,
+                                           case_9,
                                            case_10
                                            };
 void BenchMarkTest::BM_MassiveLinks_Vector_Fucntion(benchmark::State &state){
     _count=0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         massiveConteinerStd[choose](_count);
     }
 }
@@ -863,11 +1297,60 @@ QVector<funcType> massiveConteiner_Std{
             case_8,
             case_9,
             case_10,
+            //60
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10
 };
 void BenchMarkTest::BM_MassiveLinks_QVector_CStyle(benchmark::State &state){
     _count=0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         massiveConteiner_Std[choose](_count);
     }
 }
@@ -947,12 +1430,61 @@ std::vector<funcType> massiveConteiner_VectorStd{
             case_7,
             case_8,
             case_9,
+            case_10,
+            //60
+
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
+            case_10,
+
+            case_0,
+            case_1,
+            case_2,
+            case_3,
+            case_4,
+            case_5,
+            case_6,
+            case_7,
+            case_8,
+            case_9,
             case_10
 };
 void BenchMarkTest::BM_MassiveLinks_Vector_CStyle(benchmark::State &state){
     _count=0;
     for (auto _ : state){
-        int choose = rand()%11;
+        int choose = rand()%100;
         massiveConteiner_VectorStd[choose](_count);
     }
 }
